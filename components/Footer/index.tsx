@@ -10,13 +10,13 @@ import {
 
 export const Footer = () => {
   return (
-    <Box bg="#121212" pb={['0px', '0px', '30px']}>
-      <Box maxW="1200px" py={['0px', '0px', '10px']} mx="auto">
+    <Box bg="#121212" pb={['0px', '30px', '30px']}>
+      <Box maxW="1200px" py={['20px', '0px', '10px']} mx="auto">
         <SimpleGrid
           columns={[2, 2, 3]}
           gap={[2, 2, 0]}
-          p={['20px', '0px']}
-          py="60px"
+          p={['20px', '20px', '0px']}
+          py={["10px", "40px", "60px"]}
         >
           <Box>
             <Text
@@ -79,23 +79,23 @@ export const Footer = () => {
         </SimpleGrid>
       </Box>
       <Box bg="#121212" borderTop="1px solid #707070" py="20px">
-        <SimpleGrid maxW="1200px" mx="auto" columns={[1, 1, 2]}>
+        <SimpleGrid maxW="1200px" mx="auto" px={["20px", "20px", "0px"]} columns={[1, 1, 2]}>
           <Flex gap={5}>
             <Center>
               <Text
                 fontFamily="aktiv-grotesk, sans-serif"
                 fontWeight="700"
-                fontSize="12px"
+                fontSize={["12px", "12px", "14px"]}
                 color="#FFF"
                 pr="30px"
               >
                 SIGA NOSSAS REDES SOCIAIS
               </Text>
-              <Flex gap={2}>
+              <Flex gap={2} display={["none", "none", "flex"]}>
                 <Box color="#FFF" cursor="pointer">
                   <AiOutlineInstagram size="30px" />
                 </Box>
-                <Box color="#FFF" cursor="pointer">
+                <Box color="#FFF" cursor="pointer" >
                   <AiOutlineLinkedin size="30px" />
                 </Box>
                 <Center color="#FFF" cursor="pointer">
@@ -103,6 +103,20 @@ export const Footer = () => {
                 </Center>
                 <Center color="#FFF" cursor="pointer">
                   <AiOutlineYoutube size="30px" />
+                </Center>
+              </Flex>
+              <Flex gap={2} display={["flex", "flex", "none"]}>
+                <Box color="#FFF" cursor="pointer">
+                  <AiOutlineInstagram size="25px" />
+                </Box>
+                <Box color="#FFF" cursor="pointer" >
+                  <AiOutlineLinkedin size="25px" />
+                </Box>
+                <Center color="#FFF" cursor="pointer">
+                  <AiOutlineTwitter size="25px" />
+                </Center>
+                <Center color="#FFF" cursor="pointer">
+                  <AiOutlineYoutube size="25px" />
                 </Center>
               </Flex>
             </Center>

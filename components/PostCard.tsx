@@ -1,7 +1,11 @@
 import React from 'react'
+import { posts } from '../pages'
 
-export const PostCard = () => {
+export const PostCard = ({ post }: any) => {
   return (
-    <div>PostCard</div>
+    <div>
+      {post.title}
+      {post.excerpt}
+    </div>
   )
 }

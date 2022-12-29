@@ -18,7 +18,7 @@ export const Header = () => {
               src="/images/uol.png"
               objectFit="cover"
               alt="logo"
-              width="100px"
+              width={["80px", "100px", "100px"]}
             />
           </Box>
         </Flex>
